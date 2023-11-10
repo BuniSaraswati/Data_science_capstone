@@ -61,13 +61,15 @@ In this capstone project, the objective is to predict whether the Falcon 9 first
 - Evaluate and compare models using test data to determine the most effective method.
 
 ## Repository Structure
-- data/
-  - raw_data.json                # Raw data collected from API and web scraping
-  - cleaned_data.csv             # Cleaned and preprocessed data for analysis
+- dataset/
+  - dataset_part_1.csv                # Raw data collected from API and web scraping
+  - spacex_web_scraped.csv             # Cleaned and preprocessed data for analysis
+  - my_data1.db                        #  This dataset includes a record for each payload carried during a SpaceX mission into outer space.
 - notebooks/
-  - 01_data_collection.ipynb    # Jupyter notebook for data collection
-  - 02_eda.ipynb                 # Jupyter notebook for exploratory data analysis
-  - 03_dashboard_map.ipynb      # Jupyter notebook for building dashboard and map
-  - 04_machine_learning.ipynb   # Jupyter notebook for machine learning
+  - 01-API-data-collection.ipynb    # Jupyter notebook for data collection using API
+  - 02-webscraping.ipynb            # Jupyter notebook for data collection using Beautifulsoup and data cleaning
+  - 03-EDA-With_SQL.ipynb           # Jupyter notebook for using SQL queries on the dataset to extract meaningful insights.
+  - 04-EDA_Folium.ipynb             # Jupyter notebook for Exploration of SpaceX mission data through interactive maps using Folium in Python.
+  - 05-EDA-plotly.ipynb             # Jupyter notebook for Implementation of dynamic visualization features, including launch site selection, success pie chart based on site, payload range selection, and success payload scatter plot.
+  - 06_machine_learning.ipynb   # Jupyter notebook for exploratory data analysis, established training labels through class column creation, standardized the data, and performed hyperparameter tuning for SVM, Classification Trees, and Logistic Regression to identify the best-performing method on test data.
  
-- requirements.txt               # List of dependencies for the project
